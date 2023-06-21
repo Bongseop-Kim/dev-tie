@@ -2,13 +2,12 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useRef, useState } from "react";
 
 const HomeClient = () => {
   const router = useRouter();
 
   const tieItemList = [
-    { name: "원 포인트", imgSrc: "/images/pointDesign.png", link: "/point" },
+    { name: "원 포인트", imgSrc: "/images/pointParrot.png", link: "/point" },
     { name: "원 패턴 스트라이프", imgSrc: "/images/patternDesign.png", link: "/points/one" },
     { name: "투 패턴 스트라이프", imgSrc: "/images/twoDesign.png", link: "/points/two" },
     { name: "포 패턴 스트라이프", imgSrc: "/images/fourDesign.png", link: "/points/four" },
@@ -24,7 +23,7 @@ const HomeClient = () => {
               <div
                 key={item.name}
                 onClick={() => router.push(item.link)}
-                className="cursor-pointer flex flex-col gap-2"
+                className="cursor-pointer flex flex-col gap-2 hover:font-bold "
               >
                 <Image src={item.imgSrc} height="100" width="300" alt={item.name} className="rounded-md" />
                 <div>{item.name}</div>

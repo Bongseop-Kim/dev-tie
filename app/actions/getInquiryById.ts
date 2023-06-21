@@ -1,12 +1,12 @@
 import prisma from "@/app/libs/prismadb";
 
 interface IParams {
-  inquiryId?: string;
+  inquiryId?: number;
 }
 
 export default async function getInquiryById(params: IParams) {
   try {
-    const { inquiryId } = params;
+    const inquiryId = Number(params.inquiryId);
 
     const inquiry = await prisma.inquiry.findUnique({
       where: {

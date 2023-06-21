@@ -39,13 +39,13 @@ const MobileNav: React.FC<UserMenuProps> = ({ currentUser }) => {
       {isOpen && (
         <div className="absolute rounded-xl shadow-md w-full bg-white overflow-hidden right-0 top-12 text-sm">
           <div className="flex flex-col cursor-pointer">
-            <MenuItem onClick={() => router.push("/")} label="디자인" />
+            <MenuItem onClick={() => router.push("/design")} label="디자인" />
             <MenuItem onClick={() => router.push("/portpolio")} label="포트폴리오" />
-            <MenuItem onClick={() => router.push("/")} label="견적 및 문의" />
+            <MenuItem onClick={() => router.push("/inquiry")} label="견적 및 문의" />
             <hr />
             {currentUser ? (
               <>
-                <MenuItem onClick={() => router.push("/myInquiry")} label="문의내역" />
+                <MenuItem onClick={() => router.push("/myInquiry")} label="견적내역" />
                 <MenuItem onClick={() => router.push("/myInfo")} label="개인정보" />
                 <hr />
                 <MenuItem onClick={() => signOut()} label="로그아웃" />

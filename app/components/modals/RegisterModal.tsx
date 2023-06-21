@@ -1,8 +1,7 @@
 "use client";
 
 import axios from "axios";
-import { AiFillGithub } from "react-icons/ai";
-import { FcGoogle } from "react-icons/fc";
+import { RiKakaoTalkFill } from "react-icons/ri";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { useCallback, useState } from "react";
 
@@ -57,7 +56,7 @@ const RegisterModal = () => {
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
-      <Heading title="환영합니다! 👋" subtitle="Create an accout!" />
+      <Heading title="환영합니다! 👋" subtitle="회원가입하세요!" />
       <Input id="email" label="이메일" disabled={isLoading} register={register} errors={errors} required />
       <Input id="name" label="이름" disabled={isLoading} register={register} errors={errors} required />
       <Input
@@ -75,8 +74,7 @@ const RegisterModal = () => {
   const footerContent = (
     <div className="flex flex-col gap-4 mt-3">
       <hr />
-      <Button outline label="네이버로 시작하기" icon={FcGoogle} onClick={() => signIn("google")} />
-      <Button outline label="카카오로 시작하기" icon={AiFillGithub} onClick={() => signIn("github")} />
+      {/* <Button outline label="카카오로 시작하기" icon={RiKakaoTalkFill} onClick={() => signIn("kakao")} /> */}
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="justify-center flex flex-row items-center gap-2">
           <div>Already have an account?</div>

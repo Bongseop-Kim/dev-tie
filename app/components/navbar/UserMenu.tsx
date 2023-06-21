@@ -43,7 +43,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             {currentUser ? (
               <>
                 <MenuItem onClick={() => router.push("/myInquiry")} label="문의내역" />
-                <MenuItem onClick={() => router.push("/portpolio")} label="포트폴리오" />
                 <MenuItem onClick={() => router.push("/myInfo")} label="개인정보" />
                 <hr />
                 <MenuItem onClick={() => signOut()} label="로그아웃" />

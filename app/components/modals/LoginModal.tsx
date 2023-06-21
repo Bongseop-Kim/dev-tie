@@ -1,8 +1,7 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-import { AiFillGithub } from "react-icons/ai";
-import { FcGoogle } from "react-icons/fc";
+import { RiKakaoTalkFill } from "react-icons/ri";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { useCallback, useState } from "react";
 
@@ -62,7 +61,7 @@ const LoginModal = () => {
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
-      <Heading title="환영합니다! 👋" subtitle="Login to your accout!" />
+      <Heading title="환영합니다! 👋" subtitle="로그인하세요!" />
       <Input id="email" label="이메일" disabled={isLoading} register={register} errors={errors} required />
       <Input
         id="password"
@@ -79,8 +78,7 @@ const LoginModal = () => {
   const footerContent = (
     <div className="flex flex-col gap-4 mt-3">
       <hr />
-      <Button outline label="네이버로 로그인" icon={FcGoogle} onClick={() => signIn("google")} />
-      <Button outline label="카카오로 로그인" icon={AiFillGithub} onClick={() => signIn("github")} />
+      {/* <Button outline label="카카오로 로그인" icon={RiKakaoTalkFill} onClick={() => signIn("kakao")} /> */}
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="justify-center flex flex-row items-center gap-2">
           <div>계정이 없으신가요?</div>
