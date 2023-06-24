@@ -1,7 +1,6 @@
 "use client";
 
 import axios from "axios";
-import { RiKakaoTalkFill } from "react-icons/ri";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { useCallback, useState } from "react";
 
@@ -12,8 +11,6 @@ import Modal from "./Modal";
 import Heading from "../Heading";
 import Input from "../input/Input";
 import { toast } from "react-hot-toast";
-import Button from "../Button";
-import { signIn } from "next-auth/react";
 
 //:TODO: 폼 데이터를 다루기 위한 react-hook-form
 //:TODO: 에러처리를 다루기 위한 react-hot-toast

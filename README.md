@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 넥타이 디자인 편집 & 견적 서비스
 
-## Getting Started
+**기획동기**
 
-First, run the development server:
+- 일반 소비자가 자신의 원하는 넥타이의 디자인을 직접 만들 수 있고, 제작 까지 받을 수 있는 서비스를 제공합니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+**서비스 이용대상**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 넥타이의 디자인을 직접 그리고 싶은 고객
+- 넥타이의 제작 견적을 받고 싶은 고객
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**서비스 목표**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 원하는 넥타이의 패턴을 선택하고 이미지 파일을 첨부하여 디자인을 그릴 수 있습니다.
+- 상세 견적내용을 선택하고 옵션에 따라 견적 금액을 받을 수 있습니다.
 
-## Learn More
+**향후 기술 목표**
 
-To learn more about Next.js, take a look at the following resources:
+- 다양한 디자인 패턴을 추가할 예정입니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<hr />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# React Moveable을 활용한 넥타이 디자인 편집 서비스
 
-## Deploy on Vercel
+## 1. 서비스 구성
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 사용 기술 스택
+  <img src = './uploads/stacks.png' width=60% >
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 2. 나의 활동 내역
+
+1. React Moveable를 활용한 디자인 편집
+   <img src = './public/images/two.gif' >
+
+2. next-s3-upload를 활용한 이미지 업로드
+   <img src = './public/images/quote.gif' >
+
+3. 리랜더링 최소화를 위한 react-hook-form 사용
