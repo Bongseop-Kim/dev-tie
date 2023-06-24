@@ -1,10 +1,10 @@
-import getInquires from "../actions/getMyInquiries";
+import getMynquiry from "../actions/getMyInquiries";
 import ClientOnly from "../components/ClientOnly";
 import Container from "../components/Container";
 import MyInquiryClient from "./MyInquiry";
 
 const MyInquiry = async () => {
-  const myInquiries = await getInquires();
+  const myInquiries = await getMynquiry();
 
   return (
     <ClientOnly>
@@ -16,3 +16,5 @@ const MyInquiry = async () => {
 };
 
 export default MyInquiry;
+
+export const dynamic = "force-dynamic";

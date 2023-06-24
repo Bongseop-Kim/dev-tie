@@ -5,7 +5,7 @@ import DetailClient from "./DetailClient";
 import Banner from "@/app/components/Banner";
 
 interface IParams {
-  inquiryId?: string;
+  inquiryId?: number;
 }
 
 const Detail = async ({ params }: { params: IParams }) => {

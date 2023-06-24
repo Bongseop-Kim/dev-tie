@@ -1,10 +1,7 @@
-import { getServerSession } from "next-auth/next";
-
-import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import prisma from "@/app/libs/prismadb";
 import { getSession } from "./getCurrentUser";
 
-export default async function getInquires() {
+export default async function getMynquiry() {
   try {
     const session = await getSession();
 
