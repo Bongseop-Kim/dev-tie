@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "prisma db push && next build",
-    "start": "concurrently \"next start\" \"npx prisma studio\"",
+    "start": "next start",
     "studio": "npx prisma studio"
   },
   "dependencies": {
