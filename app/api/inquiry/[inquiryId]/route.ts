@@ -3,13 +3,13 @@ import { NextResponse } from "next/server";
 import prisma from "@/app/libs/prismadb";
 
 interface IParams {
-  inquiryId?: number;
+  inquiryId?: string;
 }
 
 export async function DELETE(request: Request, { params }: { params: IParams }) {
   const { inquiryId } = params;
 
-  if (!inquiryId || typeof inquiryId !== "number") {
+  if (!inquiryId || typeof inquiryId !== "string") {
     throw new Error("Invalid ID");
   }
 

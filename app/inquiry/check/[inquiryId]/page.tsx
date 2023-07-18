@@ -5,7 +5,7 @@ import getInquiryById from "@/app/actions/getInquiryById";
 import Banner from "@/app/components/Banner";
 
 interface IParams {
-  inquiryId?: number;
+  inquiryId?: string;
 }
 
 const Check = async ({ params }: { params: IParams }) => {

@@ -8,7 +8,6 @@ import InquiryClient from "./InquiryClient";
 const Board = async () => {
   const inquiries = await getInquiry();
   const currentUser = await getCurrentUser();
-
   return (
     <ClientOnly>
       <Banner

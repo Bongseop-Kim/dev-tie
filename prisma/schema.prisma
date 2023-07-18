@@ -3,12 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider = "mongodb"
+  url      = env("MONGODB_URI")
 }
 
 model User {
-  id             Int       @id @default(autoincrement())
+  id             String    @id @default(auto()) @map("_id") @db.ObjectId
   name           String?
   email          String?   @unique
   emailVerified  DateTime?
@@ -19,7 +19,7 @@ model User {
 }
 
 model Inquiry {
-  id          Int      @id @default(autoincrement())
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
   author      String
   boxPackage  String
   content     String
@@ -27,7 +27,7 @@ model Inquiry {
   design      String
   designPrice Int
   email       String
-  userId      Int?
+  userId      String?
   fabric      String
   fabricPrice Int
   hopePrice   Int
