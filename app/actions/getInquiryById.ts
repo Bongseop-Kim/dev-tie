@@ -13,7 +13,6 @@ export default async function getInquiryById(params: IParams) {
         id: inquiryId,
       },
     });
-    console.log(inquiry);
 
     if (!inquiry) {
       return null;

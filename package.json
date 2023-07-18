@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "prisma db push && next build",
-    "start": "next start",
-    "studio": "npx prisma studio"
+    "start": "next start"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.6",
