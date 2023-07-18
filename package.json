@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "prisma generate && prisma migrate deploy && prisma db seed && next build",
+    "start": "concurrently \"next start\" \"npx prisma studio\"",
+    "studio": "npx prisma studio"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.6",
