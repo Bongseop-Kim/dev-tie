@@ -1,5 +1,7 @@
 # 넥타이 디자인 편집 & 견적 서비스
 
+
+
 **기획동기**
 
 - 일반 소비자가 자신의 원하는 넥타이의 디자인을 직접 만들 수 있고, 제작 까지 받을 수 있는 서비스를 제공합니다.
@@ -25,14 +27,17 @@
 ## 1. 서비스 구성
 
 - 사용 기술 스택
-  <img src = './uploads/stacks.png' width=60% >
+  Next.js, MongoDB
 
 ## 2. 나의 활동 내역
 
 1. React Moveable를 활용한 디자인 편집
+
+
    <img src = './public/images/two.gif' >
 
-2. next-s3-upload를 활용한 이미지 업로드
-   <img src = './public/images/quote.gif' >
 
-3. 리랜더링 최소화를 위한 react-hook-form 사용
+2. 클라우드 타입 배포
+
+
+   [사이트 바로가기](https://port-0-dev-tie-eg4e2alk7yskxp.sel4.cloudtype.app)
